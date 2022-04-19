@@ -7,18 +7,38 @@ export default {
 };
 
 export const Basic = () => {
-  const name = "HDip Computer Science";
-  const twoModules = [
+  const name = "BSc Computer Forensic and Security - Modules table";
+  const sixModules = [
     {
-      name: "DevOps",
-      noLectures: 1,
+      name: "WAD 2",
+      noLectures: 2,
       noPracticals: 2,
     },
     {
-      name: "Enterprise Web Dev",
+      name: "LPoCFS",
+      noLectures: 4,
+      noPracticals: 0,
+    },
+    {
+      name: "NF",
       noLectures: 2,
+      noPracticals: 2,
+    },
+    {
+      name: "DO",
+      noLectures: 1,
       noPracticals: 3,
     },
+    {
+      name: "PP",
+      noLectures: 3,
+      noPracticals: 0,
+    },
+    {
+      name: "NoSQL D",
+      noLectures: 2,
+      noPracticals: 2,
+    }
   ];
-  return <CourseModulesWithProps modules={twoModules} course={name} />;
+  return <CourseModulesWithProps modules={sixModules} course={name} />;
 };
