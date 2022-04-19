@@ -7,27 +7,37 @@ export default {
 };
 
 export const Basic = () => {
-  const name = "HDip Computer Science";
+  const name = "BSc Computer Forensic and Security - Modules table";
   const modules = [
     {
-      name: "DevOps",
+      name: "WAD 2",
+      noLectures: 2,
+      noPracticals: 2,
+    },
+    {
+      name: "LPoCFS",
+      noLectures: 4,
+      noPracticals: 0,
+    },
+    {
+      name: "NF",
+      noLectures: 2,
+      noPracticals: 2,
+    },
+    {
+      name: "DO",
       noLectures: 1,
-      noPracticals: 2,
-    },
-    {
-      name: "Enterprise Web Dev",
-      noLectures: 2,
       noPracticals: 3,
     },
     {
-      name: "Programming",
-      noLectures: 2,
-      noPracticals: 2,
+      name: "PP",
+      noLectures: 3,
+      noPracticals: 0,
     },
     {
-      name: "Computer Systems",
+      name: "NoSQL D",
       noLectures: 2,
-      noPracticals: 3,
+      noPracticals: 2,
     },
   ];
   return <CourseModulesCollections modules={modules} course={name} />;
